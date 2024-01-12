@@ -5,7 +5,7 @@ Outlining the issue / weak point / problem to be solved by this proposal. This s
 It is important to cover:
 
  - [ ] What the problem is
- - [ ] Who it affects
+ - [ ] Whom it affects
  - [ ] Have there been previous attempts to resolve the problem
  - [ ] Why it should be tackled
 -->

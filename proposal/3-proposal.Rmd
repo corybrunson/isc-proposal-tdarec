@@ -1,0 +1,60 @@
+# The proposal
+<!--
+This is where the proposal should be outlined. 
+-->
+
+## Overview
+<!--
+At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
+-->
+
+## Detail
+<!--
+Go into more detail about the specifics of the project and it delivers against the problem.
+
+Depending on project type the detail section should include:
+
+ - [ ] Minimum Viable Product
+ - [ ] Architecture
+ - [ ] Assumptions
+-->
+
+
+
+**Primary goal:** {recipes} extension for vectorizations (and other pre-processing transformations) of persistence data.
+
+The following transformations should be implemented or imported [@Fasy2020; @Pun2022; @Ali2022]:
+
+Statistical vectorizations
+
+* Persistence statistics [@Ali2022]
+* Entropy summary [@Ali2022]
+* 2D histogram [@Fasy2020]
+
+Algebraic vectorizations
+
+* Algebraic functions [@Ali2022]
+* Tropical coordinate functions [@Ali2022]
+* Complex polynomial [@Ali2022]
+
+Curve vectorizations
+
+* Betti curve [@Fasy2020; @Ali2022]
+* Lifespan curve [@Ali2022]
+* Persistence landscape [@Fasy2020; @Ali2022]
+* Persistence silhouette [@Ali2022]
+
+Functional vectorizations
+
+* Persistence surface [@Pun2022]
+* Persistence image [@Fasy2020]
+* Template functions [@Ali2022]
+
+**Secondary goal:** Redesign {TDAstats} to specialize in hypothesis tests and better integrate into tidy workflows.
+
+1. Remove Ripser and {ggplot2} code in favor of dependency on {ripserr} and {ggtda}.
+2. Identify additional hypothesis tests and null models that should be included [@Robinson2017; @VejdemoJohansson2022].
+3. Use standard classes and methods (e.g. class 'htest', method `print()`) to make output follow common R conventions; include {generics} methods like `tidy()`.
+
+**Note:**
+[{arulesteps}](https://github.com/corybrunson/arulesteps) provides proof-of-concept for a {recipes} extension.

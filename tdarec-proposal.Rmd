@@ -1,0 +1,30 @@
+---
+title: "`r proposal`"
+author: "`r author`"
+date: "`r Sys.Date()`"
+output: html_document
+bibliography: tdarec.bib
+---
+
+```{r setup, eval=TRUE, results='hide', echo=FALSE}
+knitr::opts_knit$set(warning = FALSE, message= FALSE)
+```
+
+
+```{r autodoc, child='proposal/1-signatories.Rmd', eval=TRUE}
+```
+
+```{r autodoc, child='proposal/2-problemdefinition.Rmd', eval=TRUE}
+```
+
+```{r autodoc, child='proposal/3-proposal.Rmd', eval=TRUE}
+```
+
+```{r autodoc, child='proposal/4-timeline.Rmd', eval=TRUE}
+```
+
+```{r autodoc, child='proposal/5-requirements.Rmd', eval=TRUE}
+```
+
+```{r autodoc, child='proposal/6-success.Rmd', eval=TRUE}
+```

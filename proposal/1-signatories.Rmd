@@ -10,6 +10,26 @@ An optional section would be for R-Core signatories where changes to R are propo
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
 
+**Describe each member of the team (including advisors) and the skills they bring to the project.**
+
+Jason Cory Brunson, PhD
+(Project Co-lead):
+Dr. Brunson is a mathematician by training with a long-running interest in topological data analysis. He has authored or contributed to several TDA packages on CRAN, including {TDAstats}, {ripserr}, {simplextree}, {tdaunif}, **and {ggtda}**, the last two of which he maintains.
+
+Aymeric Stamm, PhD
+(Project Co-lead):
+Dr. Stamm ...
+
+Paul Rosen, PhD
+(Advisory Board Member):
+Dr. Rosen ...
+
+Bertrand Michel, PhD (?)
+(Advisory Board Member):
+Dr. Michel ...
+
+**Ask Peter, Hubert, and/or Henry about being an Advisory Board member.**
+
 ## Contributors
 <!-- 
 Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
@@ -20,3 +40,4 @@ Who are the people who have actively helped with this proposal but won't necessa
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
+**Ask the TDA Discussion Group and TDA folks in LSM.**
