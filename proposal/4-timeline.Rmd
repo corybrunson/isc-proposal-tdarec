@@ -10,6 +10,11 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
+Platform: GitHub tdaverse account & existing package repos (+ {tdarec})
+
+Licenses: consistent with existing packages and Tidyverse (GPL >= 2)
+
+Reporting framework: monthly progress reports per timeline below
 
 ## Technical delivery
 <!--
@@ -17,6 +22,19 @@ Covering the actual delivery of the project this section should provide at least
 
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
+
+1. {recipes} extension for topological data transformations (<= 4mo)
+    1. R external engines or original implementations of transformations (<= 2mo)
+    2. template {recipes} extension (<= 2wk)
+    3. complete implementation of a single transformation & documentation of all necessary steps (including unit tests, documentation, and examples) (<= 2wk)
+    4. checklisted implementations of remaining transformations (<= 4wk)
+    5. vignette illustrating complete modeling workflow using topological transformations (<= 1wk)
+2. {TDAstats} redesign (<= 2mo)
+    1. replace internal Ripser code with {ripserr} dependency (<= 1wk)
+    2. rewrite {ggplot2} plots in base R (<= 1wk)
+    3. structure hypothesis test results as `"htest"` objects (<= 1wk)
+    4. revise hypothesis testing vignette (<= 1wk)
+    5. implement additional hypothesis tests (<= 1mo)
 
 ## Other aspects
 <!--
@@ -28,3 +46,8 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] UseR!
  - [ ] ISC meetings
 -->
+
+* social media
+* R-bloggers cross-posts: package tutorials, CRAN releases
+* conference submissions (useR!, rstudio::conf, ASA)
+* in-person workshop at UF TDA 2025? (**March: Ask Peter.**)

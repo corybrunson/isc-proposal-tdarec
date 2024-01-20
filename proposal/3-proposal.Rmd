@@ -3,10 +3,15 @@
 This is where the proposal should be outlined. 
 -->
 
+The **goal** of this pilot is to publish 1 or 2 packages that seamlessly integrate popular techniques from topological data analysis into common statistical workflows in R.
+The **expected benefit** is that these extensions will be downloaded and used by researchers and analysts with no specialized background in TDA, which will expose them and their communities to the broader package collection and create sufficient awareness, interest, and demand for users to request features and contribute to the packages.
+
 ## Overview
 <!--
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
+
+
 
 ## Detail
 <!--
@@ -18,8 +23,6 @@ Depending on project type the detail section should include:
  - [ ] Architecture
  - [ ] Assumptions
 -->
-
-
 
 **Primary goal:** {recipes} extension for vectorizations (and other pre-processing transformations) of persistence data.
 
@@ -55,6 +58,24 @@ Functional vectorizations
 1. Remove Ripser and {ggplot2} code in favor of dependency on {ripserr} and {ggtda}.
 2. Identify additional hypothesis tests and null models that should be included [@Robinson2017; @VejdemoJohansson2022].
 3. Use standard classes and methods (e.g. class 'htest', method `print()`) to make output follow common R conventions; include {generics} methods like `tidy()`.
+
+The following hypothesis tests are already implemented:
+
+* permutation test for difference in means [@Robinson2017]
+
+The following hypothesis tests should be implemented:
+
+* exact topological inference [@Chung2017] <https://link.springer.com/chapter/10.1007/978-3-319-59050-9_24>
+* Z-test and permutation test for persistence landscapes, currently implemented in {plt} [@Bubenik2015]
+* bootstrap sample hypothesis tests [@Blumberg2014] <https://link.springer.com/article/10.1007/s10208-014-9201-4>
+* tests for grouped point clouds [@Abdallah2022] <https://www.aimsciences.org/article/doi/10.3934/fods.2022014>
+* Bayesian inference? <https://arxiv.org/abs/1901.02034v1>
+
+Also check these sources:
+
+* <https://link.springer.com/article/10.1007/s10711-013-9937-z>
+* <https://www.jstor.org/stable/43556495>
+* <https://dl.acm.org/doi/10.1145/2582112.2582128>
 
 **Note:**
 [{arulesteps}](https://github.com/corybrunson/arulesteps) provides proof-of-concept for a {recipes} extension.
