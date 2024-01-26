@@ -10,16 +10,34 @@ It is important to cover:
  - [ ] Why it should be tackled
 -->
 
-* R is one of the top languages for statistics: implementations of new methods, use by professional statisticians, use by nonspecialist analysts
-* TDA is an emerging and highly heterogeneous area of statistical research
-* R packages for TDA tend to be (a) designed for specialist researchers rather than general users, (b) self-contained rather than modular, (c) inconsistent or incompatible with the conventions and structures of common workflows, and (d) reliant on libraries written in other languages
-* this has likely hindered and prevented the adoption of TDA approaches by researchers and analysts in myriad domains (e.g. <https://rseek.org/> search for "topological data analysis" returns a handful of commentaries, tutorials, and workshop notes, most of which use only one package and all of which are several years old[^search])
+R is one of the most widely used programming languages in statistics. It is used by professionals ranging from data analysts to research statisticians, to implement newly developed methods as well as to conduct conventional analyses.
+Topological data analysis (TDA) is an emerging and highly heterogeneous area of statistical research that is grounded in the mathematical discipline of topology. It intersects heavily with exploratory analysis and visualization, statistical inference, and machine learning.
+It is therefore important to the currency of mainstream statistical work and to ongoing methods development for comprehensive and reliable TDA extensions to be available to R users.
+
+To date, R packages for TDA fall into three categories: One comprises {TDA}[^TDA] and {rgudhi}[^rgudhi], which provide interfaces to libraries in lower-level languages, including GUDHI, Dionysus, and PHAT.
+While they provide essential tools to users---{TDA} is the most frequently downloaded of the packages surveyed here, according to CRAN logs[^cranlogs]---they are not designed to integrate with common tools and workflows outside TDA. For example, they return output as lists rather than as classes with custom methods like `print()` and `summary()`.
+They are also made fragile by the need to adapt to upgrades both in the source code language and in R. Both packages have been removed from CRAN in the past year due to emergent issues not being corrected in time.
+
+Another category includes {TDAstats}[^TDAstats], {TDAkit}[^TDAkit], {TDApplied}[^TDApplied], and {GSSTDA}[^GSSTDA]. These packages provide bespoke toolkits for specific areas of TDA: statistical inference ({TDAstats}, {TDAkit}), machine learning ({TDApplied}), and survival analysis ({GSSTDA}).
+While these packages are also not designed to interface with non-TDA conventions, some are downloaded almost as often as {TDA}.
+
+In summary, these tend to be designed for specialist researchers rather than general users, self-contained rather than modular, inconsistent or incompatible with the conventions and structures of common workflows, and reliant on libraries written in other languages.
+These limitations have likely hindered and prevented the adoption of TDA approaches by researchers and analysts; for example, an Rseek search for "topological data analysis" returns a handful of commentaries, tutorials, and workshop notes, most of which use only one package and all of which are several years old.[^search]
+There is limited funding for maintaining TDA software, which certainly contributes to the small number and idiosyncrasy of available packages, and this may in part be because a critical mass of users has not emerged.
 
 [^search]: <https://blog.revolutionanalytics.com/2014/01/topological-data-analysis-with-r.html>, <https://rviews.rstudio.com/2018/11/14/a-mathematician-s-perspective-on-topological-data-analysis-and-r/>, <https://calebntorres.github.io/pdf/TDA.pdf>, <https://people.clas.ufl.edu/peterbubenik/files/tda_r_workshop.pdf>, <https://gist.github.com/rrrlw/2fd22a834a883cb66454b1dabab9fdcb>
 
-* previous attempts ({TDA}, {rgudhi}) basically port other libraries into R; they are successful in providing tools, but they require users to rely on opaque source code and figure out how to incorporate the tools into their own work, and they are made fragile by the delicate demands of adapting to upgrades in source code language and in R (note: both {TDA} and {rgudhi} have been removed from CRAN due to emergent issues not being corrected in time)
-* there is limited funding for maintaining TDA software, arguably in part because maintainers do not receive much professional recognition, itself in part because no critical mass of users frequently cites the products
+A third category of TDA packages fit a different profile, in that each package performs a narrow task within TDA: {simplextree}[^simplextree] provides the simplex tree data structure, {interplex}[^interplex] converts between this and other data structures for simplicial complexes, {ripserr}[^ripserr] interfaces to the Ripser algorithm to compute persistent homology, {tdaunif}[^tdaunif] provides uniform samplers for topologically interesting spaces, **{plt} interfaces to the Persistence Landscapes Toolbox, and {ggtda} is a {ggplot2} extension for point cloud and persistence data**.
+These packages have been developed collaboratively by the PI and colleagues to be part of a collection called the "TDAverse". The goal is to build a general-purpose, modular, native, interoperable, and extensible R package collection for TDA.
 
-* the TDAverse is an unfunded program to build a general-purpose, modular, native, interoperable, and extensible R package collection for TDA: currently proof-of-concept, downloaded between 25% and 50% as frequently as {TDA}; not yet as interoperable and extensible as envisioned
-* several users have requested features or expressed interest in contributing
-* resolving these issues may increase uptake and involvement
+Currently, even combined, these packages are not as comprehensive as the other two categories.
+They are downloaded between 25% and 50% as frequently as {TDA}, and they are not yet as interoperable and extensible as envisioned.
+In order to support common research workflows by non-specialists, most importantly exploratory analysis and machine learning, the collection will need to resolve its own incompatibilities and be integrated into more widely used data analysis tools.
+
+[^TDA]: <https://cran.r-project.org/package=TDA>
+[^rgudhi]: <https://cran.r-project.org/package=rgudhi>
+[^TDAstats]: <https://cran.r-project.org/package=TDAstats>
+[^TDAkit]: <https://cran.r-project.org/package=TDAkit>
+[^TDApplied]: <https://cran.r-project.org/package=TDApplied>
+[^GSSTDA]: <https://cran.r-project.org/package=GSSTDA>
+[^cranlogs]: 718/month as of 2024 Jan 26

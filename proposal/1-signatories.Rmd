@@ -12,19 +12,19 @@ Who are the people responsible for actually delivering the project if the propos
 
 **Describe each member of the team (including advisors) and the skills they bring to the project.**
 
-Jason Cory Brunson, PhD
+**Jason Cory Brunson, PhD**
 (Project Co-lead):
-Dr. Brunson is a mathematician by training with a long-running interest in topological data analysis. He has authored or contributed to several TDA packages on CRAN, including {TDAstats}, {ripserr}, {simplextree}, {tdaunif}, **and {ggtda}**, the last two of which he maintains.
+Dr. Brunson is a mathematician by training with a long-running interest in topological data analysis. He has authored or contributed to several TDA packages on CRAN, including {TDAstats}, {ripserr}, {simplextree}, {tdaunif}, **{ggtda}, and {plt}**, the last **three** of which he maintains.
 
-Aymeric Stamm, PhD
+**Aymeric Stamm, PhD**
 (Project Co-lead):
 Dr. Stamm ...
 
-Paul Rosen, PhD
+**Paul Rosen, PhD**
 (Advisory Board Member):
 Dr. Rosen ...
 
-Bertrand Michel, PhD (?)
+**Bertrand Michel, PhD**
 (Advisory Board Member):
 Dr. Michel ...
 
@@ -35,6 +35,12 @@ Dr. Michel ...
 Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
 -->
 
+Several other "TDAverse" packages are published on CRAN, installable from GitHub, or in development.
+Major contributors include Raoul Wadhwa (Cleveland Clinic Lerner College of Medicine, Case Western Reserve University), Matt Piekenbrock (Khoury College of Computer Sciences, Northeastern University), Yara Skaf (College of Medicine, University of Florida), and James Otto (Department of Statistical Science, Baylor University).
+Complete lists of contributors can be found at their respective repositories.[^tdaverse-list]
+
+[^tdaverse-list]: <https://github.com/tdaverse/tdaverse>
+
 ## Consulted
 <!-- 
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
@@ -42,4 +48,7 @@ Who has been given the opportunity to provide feedback on the proposal? This sho
 
 **February: Request input and feedback from Brittany Fasy.**
 
-**February: Ask the TDA Discussion Group and TDA folks in LSM.**
+We have also solicited feedback on drafts of this proposal from members of the following research groups:
+
+* the Topological Data Analysis Discussion Group at the University of Florida
+* the Laboratory for Systems Medicine at the University of Florida
