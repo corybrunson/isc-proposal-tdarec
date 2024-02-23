@@ -27,7 +27,7 @@ There is limited funding for maintaining TDA software, which certainly contribut
 
 [^search]: <https://blog.revolutionanalytics.com/2014/01/topological-data-analysis-with-r.html>, <https://rviews.rstudio.com/2018/11/14/a-mathematician-s-perspective-on-topological-data-analysis-and-r/>, <https://calebntorres.github.io/pdf/TDA.pdf>, <https://people.clas.ufl.edu/peterbubenik/files/tda_r_workshop.pdf>, <https://gist.github.com/rrrlw/2fd22a834a883cb66454b1dabab9fdcb>
 
-A third category of TDA packages fit a different profile, in that each package performs a narrow task within TDA: {simplextree}[^simplextree] provides the simplex tree data structure, {interplex}[^interplex] converts between this and other data structures for simplicial complexes, {ripserr}[^ripserr] interfaces to the Ripser algorithm to compute persistent homology, {tdaunif}[^tdaunif] provides uniform samplers for topologically interesting spaces, **{plt} interfaces to the Persistence Landscapes Toolbox, and {ggtda} is a {ggplot2} extension for point cloud and persistence data**.
+A third category of TDA packages fit a different profile, in that each package performs a narrow task within TDA: {simplextree}[^simplextree] provides the simplex tree data structure, {interplex}[^interplex] converts between this and other data structures for simplicial complexes, {ripserr}[^ripserr] interfaces to the Ripser algorithm to compute persistent homology, {tdaunif}[^tdaunif] provides uniform samplers for topologically interesting spaces, **{plt}[^plt] interfaces to the Persistence Landscapes Toolbox, and {ggtda}[^ggtda] is a {ggplot2} extension for point cloud and persistence data**.
 These packages have been developed collaboratively by the PI and colleagues to be part of a collection called the "TDAverse". The goal is to build a general-purpose, modular, native, interoperable, and extensible R package collection for TDA.
 
 Currently, even combined, these packages are not as comprehensive as the other two categories.
@@ -41,3 +41,9 @@ In order to support common research workflows by non-specialists, most important
 [^TDApplied]: <https://cran.r-project.org/package=TDApplied>
 [^GSSTDA]: <https://cran.r-project.org/package=GSSTDA>
 [^cranlogs]: 718/month as of 2024 Jan 26
+[^simplextree]: <https://cran.r-project.org/package=simplextree>
+[^interplex]: <https://cran.r-project.org/package=interplex>
+[^ripserr]: <https://cran.r-project.org/package=ripserr>
+[^tdaunif]: <https://cran.r-project.org/package=tdaunif>
+[^plt]: <https://cran.r-project.org/package=plt>
+[^ggtda]: <https://cran.r-project.org/package=ggtda>

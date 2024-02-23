@@ -28,7 +28,7 @@ Dr. Rosen ...
 (Advisory Board Member):
 Dr. Michel ...
 
-**January: Ask Peter, Hubert, and/or Henry about being an Advisory Board member.**
+**February: Ask Peter, Hubert, and/or Henry about being an Advisory Board member.**
 
 ## Contributors
 <!-- 
@@ -50,5 +50,25 @@ Who has been given the opportunity to provide feedback on the proposal? This sho
 
 We have also solicited feedback on drafts of this proposal from members of the following research groups:
 
-* the Topological Data Analysis Discussion Group at the University of Florida
-* the Laboratory for Systems Medicine at the University of Florida
+* the Topological Data Analysis Discussion Group at the University of Florida[^tda-discussion]
+* the Laboratory for Systems Medicine at the University of Florida[^lsm]
+* presenters at UFTDA2024[^uftda2024], a conference organized by the Bubenik lab and hosted at the University of Florida
+
+[^tda-discussion]: <https://people.clas.ufl.edu/nikola/topological-data-analysis-discussion-group/>
+[lsm]: <https://systemsmedicine.pulmonary.medicine.ufl.edu/>
+[^uftda2024]: <https://people.clas.ufl.edu/peterbubenik/uftda2024/>
+
+Feedback has been consistent on the following points:
+
+Regarding TDA software in general
+
+1. Most techniques used in TDA are not easily accessible or well documented and require significant training or experimentation to use.
+2. Most practitioners implement at least some tools described in published studies from scratch.
+
+Regarding solutions to the problems motivating this proposal
+
+3. No software resource provides a convenient and comprehensive set of vectorization methods for persistence data.
+4. Most hypothesis-testing work is conducted using original _ad hoc_ code.
+5. Practitioners frequently use (various implementations or ports of) Ripser in longer computational pipelines that would otherwise be impractical.
+
+This feedback suggests that practitioners face challenges when using TDA software that, though they are overcome by specialists, are likely to be daunting to non-specialist researchers and analysts.

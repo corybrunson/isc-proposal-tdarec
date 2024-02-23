@@ -4,13 +4,12 @@
 <!--
 Covering the planning phase, this section should provide a relatively detailed plan of how work will start on the project. This section is important because projects need to get up and running quickly.
 
-
  - [ ] Setting up collaboration platform inc. code for contributors etc.
  - [ ] Licence decisions
  - [ ] Reporting framework
 -->
 
-Platform: GitHub tdaverse account & existing package repos (+ {tdarec})
+Platform: GitHub TDAverse account & existing package repos (+ {tdarec})
 
 Licenses: consistent with existing packages and Tidyverse (GPL >= 2)
 
