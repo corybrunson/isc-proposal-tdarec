@@ -16,7 +16,7 @@ What does success look like?
 How will we know when success is achieved, what markers can we use along the way 
 -->
 
-* downloads greater than current rate for, e.g., {TDA}
+* monthly download rates greater than current rate for, e.g., {TDA}
 * blog posts by users detailing their use of these packages
 * published research that cites these packages
 * contributions to code base from users; ideally, handoff of some packages to new maintainers

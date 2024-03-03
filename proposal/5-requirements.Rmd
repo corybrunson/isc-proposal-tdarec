@@ -9,8 +9,7 @@ Who needs to be involved, what's the proposed structure, what will it take to ge
 -->
 
 * Describe PI roles?
-* **February: Request colleagues agree to provide practical feedback (bugs, bottlenecks, limitations) especially as it pertains to their probability of adopting these tools into their own work or recommending them to colleagues.**
-* **February: Pitch project to Tidyverse team with request to agree to promote upon publication.**
+* Practical feedback (bugs, bottlenecks, limitations) from colleagues, especially as it pertains to their probability of adopting these tools into their own work or recommending them to their colleagues.
 
 ## Processes
 <!-- 

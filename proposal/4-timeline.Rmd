@@ -49,4 +49,4 @@ Covering non-technical activities like on-going publicity, paper preparation, di
 * social media
 * R-bloggers cross-posts: package tutorials, CRAN releases
 * conference submissions (useR!, rstudio::conf, ASA)
-* in-person workshop at UF TDA 2025? (**March: Ask Peter.**)
+* in-person workshop at UF TDA 2025?
