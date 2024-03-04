@@ -34,41 +34,56 @@ Depending on project type the detail section should include:
  - [ ] Assumptions
 -->
 
-**Primary goal:** Publish a {recipes} extension for vectorizations (and other pre-processing transformations) based on persistent homology.
+**Primary goal:**
+Publish a {recipes} extension for vectorizations and other transformations based on persistent homology that have been used to pre-process data for machine learning.
 
-Several pre-processing extensions have been published for Tidymodels, including **list some**.
-One PI has direct experience writing such an extension, for association rules.[^arulesteps]
+Several pre-processing extensions have been published for Tidymodels, including {embed}, {themis}, and {textrecipes}.[^recipes-extensions]
+Dr. Brunson has experience writing such an extension, for association rules, which satisfies checks but is not published.[^arulesteps]
+The new package would provide `step_*()` functions for several existing topological transformations and invite users to contribute additional steps.
 
 [^arulesteps]: <https://github.com/corybrunson/arulesteps>
+[^recipes-extensions]: <https://www.tidyverse.org/blog/2022/05/recipes-update-05-20222/>
 
-The following transformations should be implemented or imported [@Fasy2020; @Pun2022; @Ali2022]:
+Many transformations may eventually be implemented or imported [@Fasy2020; @Pun2022; @Ali2022].
+In the list below, following the organizational scheme of @Ali2022, we have boldfaced the transformations we intend to include in a first release. These are selected based on (our impressions of) their relative simplicity, the time since they were first introduced, the frequency with which they are used, and the expected time cost of implementing them or porting an existing implementation.
 
-Statistical vectorizations
+* Statistical vectorizations
+  * **Persistence statistics** [@Ali2022]
+  * Entropy summary [@Ali2022]
+  * 2D histogram [@Fasy2020]
+* Algebraic vectorizations
+  * Algebraic functions [@Ali2022]
+  * Tropical coordinate functions [@Ali2022]
+  * Complex polynomial [@Ali2022]
+* Curve vectorizations
+  * **Betti curve** [@Fasy2020; @Ali2022]
+  * **Lifespan curve** [@Ali2022]
+  * **Persistence landscape** [@Fasy2020; @Ali2022]
+  * Persistence silhouette [@Ali2022]
+* Functional vectorizations
+  * Persistence surface [@Pun2022]
+  * **Persistence image** [@Fasy2020]
+  * Template functions [@Ali2022]
 
-* Persistence statistics [@Ali2022]
-* Entropy summary [@Ali2022]
-* 2D histogram [@Fasy2020]
+Most selected methods would be implemented anew; the exceptons are persistence landscapes (implemented in {plt}) and persistence images (which would be implemented in a standalone helper package adapted from the original Matlab implementation [^persistence-images]).
 
-Algebraic vectorizations
+[^persistence-images]: <https://github.com/CSU-TDA/PersistenceImages>
 
-* Algebraic functions [@Ali2022]
-* Tropical coordinate functions [@Ali2022]
-* Complex polynomial [@Ali2022]
+**Secondary goal:**
+Publish a {flipr} extension for permutation-based statistical inference on topological data.
 
-Curve vectorizations
+Several published packages provide statistical inference for persistence diagrams, including {TDAstats}, {TDAkit}, and {TDApplied}.
+However, these are _ad hoc_ solutions for specific problems and do not provide a unified, easily extensible framework.
+In contrast, Dr. Stamm is co-lead on a coordinated package collection for permutation-based inference, with the published {flipr} package at its center.
+An extension for network-valued data, {nevada}[^nevada], is also published.
+The new package would specialize tools in {flipr} to types of data arising from TDA.
 
-* Betti curve [@Fasy2020; @Ali2022]
-* Lifespan curve [@Ali2022]
-* Persistence landscape [@Fasy2020; @Ali2022]
-* Persistence silhouette [@Ali2022]
+[^nevada]: <https://cran.r-project.org/package=nevada>
 
-Functional vectorizations
+**Aymeric, could you expand on the specific tools this package would provide?**
 
-* Persistence surface [@Pun2022]
-* Persistence image [@Fasy2020]
-* Template functions [@Ali2022]
-
-**Secondary goal:** Redesign {TDAstats} to specialize in hypothesis tests and better integrate into tidy workflows.
+<!--
+Redesign {TDAstats} to specialize in hypothesis tests and better integrate into tidy workflows.
 
 1. Remove Ripser source code and {ggplot2} plotting routines in favor of dependency on {ripserr} and {ggtda}.
 2. Identify additional hypothesis tests and null models that should be included [@Robinson2017; @VejdemoJohansson2022].
@@ -84,5 +99,14 @@ The following hypothesis tests may be implemented (listed in order of likely inc
 * Z-test and permutation test for persistence landscapes [@Bubenik2015], currently implemented in {plt}
 * exact topological inference [@Chung2017]
 * tests for grouped point clouds [@Abdallah2023]
+-->
 
-**Tertiary goal:** Refactor {ripserr} with a current implementation of Ripser, including options to recover representative cocycles and cycles.
+**Tertiary goal:** Refactor {ripserr} with a current implementation of Ripser.
+
+The base implementation of Ripser is written in C++[^ripser], and {ripserr} provides C++/R integration via {Rcpp}.
+We therefore anticipate that this update will be a straightforward, though by no means trivial, exercise in C++/R integration via {Rcpp}.
+
+A novel feature that may pose an additional challenge is the recovery of representative cocycles and/or cycles. These features did not exist when {ripserr} was first developed but are essential for many practical applications.
+While an ideal interface would pass options to a single C++ function, an simpler approach is available in case this proves impractical, namely to interface to one of multiple C++ functions depending on user specifications.
+
+[^ripser]: <https://github.com/Ripser/ripser>
