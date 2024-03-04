@@ -9,11 +9,18 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
-Platform: GitHub TDAverse account & existing package repos (+ {tdarec})
+<!--Platform: GitHub TDAverse account & existing package repos-->
 
-Licenses: consistent with existing packages and Tidyverse (GPL >= 2)
+Development will take place publicly on two GitHub accounts: TDAverse, co-owned by Dr. Brunson (primary and tertiary goals), and LMJL-Alea, co-owned by Dr. Stamm (secondary goal).
+Both PIs will have write access to the repositories for all project packages.
 
-Reporting framework: monthly progress reports per timeline below
+<!--Licenses: consistent with existing packages and Tidyverse (GPL >= 2)-->
+
+All project packages will be licensed compatibly with R[^r-licenses] and Tidyverse (MIT, GPL >= 2).
+
+[^r-licenses]: <https://www.r-project.org/Licenses/>
+
+The PIs will provide the R Consortium with monthly progress reports based on the expected dates of deliverables below.
 
 ## Technical delivery
 <!--
