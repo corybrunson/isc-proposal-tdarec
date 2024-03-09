@@ -49,4 +49,6 @@ What sort of things could come up that can delay or break the project?
  - [ ] Costs
 -->
 
-
+* software incompatibilities (e.g. Ripser & {Rcpp})
+* poor performance (Brunson, for one, has no background in high-performance programming)
+* lack of uptake by community despite promotion (would falsify our inferences about need?)

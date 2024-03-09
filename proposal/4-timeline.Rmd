@@ -53,8 +53,8 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] ISC meetings
 -->
 
-* social media (`#rstats` on Twitter; LinkedIn)
-* R-bloggers cross-posts: package tutorials, CRAN releases
-* conference submissions (useR!, rstudio::conf, ASA)
-* in-person workshop at UF TDA 2025?
-* software journal submission(s)
+Each package release will be announced on multiple social media accounts, including with the `#rstats` tag on Twitter and on LinkedIn.
+Something we haven't done before is have blogs cross-posted to R-bloggers, and we will do so for each publication on CRAN.
+Once at least one aim is realized, we will begin submitting abstracts to relevant conferences (including useR!, `posit::conf()`, the Joint Statistical Meetings).
+We will also propose in-person workshops co-located with local conferences including UFTDA at the University of Florida.
+Finally, we plan to submit at least two journal articles describing these packages: one on a handful of packages that integrate with the Tidyverse (including the {recipes} extension and the nearly complete {ggplot2} extension {ggtda}), another on the {flipr} collection including its TDA extension.
