@@ -14,7 +14,7 @@ Describe each member of the team (including advisors) and the skills they bring 
 
 **Jason Cory Brunson, PhD**
 (Project Co-lead):
-Dr. Brunson is a mathematician by training with a long-running interest in topological data analysis. He has authored or contributed to several TDA packages on CRAN, including {TDAstats}, {ripserr}, {simplextree}, {tdaunif}, the last of which he maintains.
+Dr. Brunson (Assistant Professor, University of Florida) is a mathematician by training with a long-running interest in topological data analysis. He has authored or contributed to several TDA packages on CRAN, including {TDAstats}, {ripserr}, {simplextree}, {tdaunif}, the last of which he maintains.
 
 **Aymeric Stamm, PhD**
 (Project Co-lead):
@@ -22,11 +22,11 @@ Dr. Stamm ...
 
 **Paul Rosen, PhD**
 (Advisory Board Member):
-Dr. Rosen ...
+Dr. Rosen (Associate Professor, University of Utah) is a computer scientist who focuses on geometric and topological approaches in scientific and information visualization and has authored several computational tools for TDA.
 
 **Bertrand Michel, PhD**
 (Advisory Board Member):
-Dr. Michel ...
+Dr. Michel (Professeur, l'Ecole Centrale Nantes) researches statistical learning and is interested in statistical methods for geometric and topological inference. He coauthored {flipr} with Dr. Stamm and others.
 
 ## Contributors
 <!-- 
@@ -35,9 +35,7 @@ Who are the people who have actively helped with this proposal but won't necessa
 
 Several other "TDAverse" packages are published on CRAN, installable from GitHub, or in development.
 Major contributors include Raoul Wadhwa (Cleveland Clinic Lerner College of Medicine, Case Western Reserve University), Matt Piekenbrock (Khoury College of Computer Sciences, Northeastern University), Yara Skaf (College of Medicine, University of Florida), and James Otto (Department of Statistical Science, Baylor University).
-Complete lists of contributors can be found at their respective repositories.[^tdaverse-list]
-
-[^tdaverse-list]: <https://github.com/tdaverse/tdaverse>
+Complete lists of contributors can be found at their respective repositories.
 
 ## Consulted
 <!-- 
@@ -53,18 +51,3 @@ We have also solicited feedback on drafts of this proposal from members of the f
 [^tda-discussion]: <https://people.clas.ufl.edu/nikola/topological-data-analysis-discussion-group/>
 [lsm]: <https://systemsmedicine.pulmonary.medicine.ufl.edu/>
 [^uftda2024]: <https://people.clas.ufl.edu/peterbubenik/uftda2024/>
-
-Feedback has been consistent on the following points:
-
-Regarding TDA software in general
-
-1. Most techniques used in TDA are not easily accessible or well documented and require significant training or experimentation to use.
-2. Most practitioners implement at least some tools described in published studies from scratch.
-
-Regarding solutions to the problems motivating this proposal
-
-3. No software resource provides a convenient and comprehensive set of vectorization methods for persistence data.
-4. Most hypothesis-testing work is conducted using original _ad hoc_ code.
-5. Practitioners frequently use (various implementations or ports of) Ripser in longer computational pipelines that would otherwise be impractical.
-
-This feedback suggests that practitioners face challenges when using TDA software that, though they are overcome by specialists, are likely to be daunting to non-specialist researchers and analysts.

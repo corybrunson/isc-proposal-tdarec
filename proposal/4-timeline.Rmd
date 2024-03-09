@@ -11,16 +11,16 @@ Covering the planning phase, this section should provide a relatively detailed p
 
 <!--Platform: GitHub TDAverse account & existing package repos-->
 
-Development will take place publicly on two GitHub accounts: TDAverse, co-owned by Dr. Brunson (primary and tertiary goals), and LMJL-Alea, co-owned by Dr. Stamm (secondary goal).
+Development will take place publicly on two GitHub accounts: TDAverse, co-owned by Dr. Brunson (Aims 1 and 3), and LMJL-Alea, co-owned by Dr. Stamm (Aim 2).
 Both PIs will have write access to the repositories for all project packages.
 
 <!--Licenses: consistent with existing packages and Tidyverse (GPL >= 2)-->
 
-All project packages will be licensed compatibly with R[^r-licenses] and Tidyverse (MIT, GPL >= 2).
+All project packages will be licensed compatibly with R and Tidyverse (MIT or GPL >= 2).
 
 [^r-licenses]: <https://www.r-project.org/Licenses/>
 
-The PIs will provide the R Consortium with monthly progress reports based on the expected dates of deliverables below.
+The PIs will provide the R Consortium with monthly progress reports based on the expected dates of the deliverables below.
 
 ## Technical delivery
 <!--
@@ -29,18 +29,18 @@ Covering the actual delivery of the project this section should provide at least
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
 
-1. {recipes} extension for topological data transformations (<= 4mo)
-    1. R external engines or original implementations of transformations (<= 2mo)
+1. {recipes} extension for topological data transformations (<= 16wk)
+    1. R external engines or original implementations of transformations (<= 6wk)
     2. template {recipes} extension (<= 2wk)
     3. complete implementation of a single transformation & documentation of all necessary steps (including unit tests, documentation, and examples) (<= 2wk)
     4. checklisted implementations of remaining transformations (<= 4wk)
-    5. vignette illustrating complete modeling workflow using topological transformations (<= 1wk)
-2. {TDAstats} redesign (<= 2mo)
-    1. replace internal Ripser code with {ripserr} dependency (<= 1wk)
-    2. rewrite {ggplot2} plots in base R (<= 1wk)
-    3. structure hypothesis test results as `"htest"` objects (<= 1wk)
-    4. revise hypothesis testing vignette (<= 1wk)
-    5. implement additional hypothesis tests (<= 1mo)
+    5. vignette illustrating complete modeling workflow using topological transformations (<= 2wk)
+2. {flipr} extension for topological data types ()
+    1. ...
+3. {ripserr} upgrade (<= 8wk)
+    1. selection and reconciliation of current Ripser implementations in C++ (<= 3wk)
+    2. {Rcpp} integration into package (<= 3wk)
+    3. updated vignette illustrating new functionality (<= 2wk)
 
 ## Other aspects
 <!--
@@ -53,7 +53,8 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] ISC meetings
 -->
 
-* social media
+* social media (`#rstats` on Twitter; LinkedIn)
 * R-bloggers cross-posts: package tutorials, CRAN releases
 * conference submissions (useR!, rstudio::conf, ASA)
 * in-person workshop at UF TDA 2025?
+* software journal submission(s)

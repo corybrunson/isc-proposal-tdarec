@@ -28,3 +28,5 @@ knitr::opts_knit$set(warning = FALSE, message= FALSE)
 
 ```{r autodoc, child='proposal/6-success.Rmd', eval=TRUE}
 ```
+
+# References

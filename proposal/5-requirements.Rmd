@@ -9,7 +9,7 @@ Who needs to be involved, what's the proposed structure, what will it take to ge
 -->
 
 * Describe PI roles?
-* Practical feedback (bugs, bottlenecks, limitations) from colleagues, especially as it pertains to their probability of adopting these tools into their own work or recommending them to their colleagues.
+* Practical feedback (bugs, bottlenecks, limitations) from colleagues who use TDA in their work or who develop TDA theory or software, especially as it pertains to their probability of adopting these tools into their own work or recommending them to their colleagues.
 
 ## Processes
 <!-- 
@@ -29,8 +29,8 @@ Will cloud computing be used - if yes are there are necessary components that wi
 Are there tools or tech that don't exist that will be produced to facilitate the project?
 -->
 
+* R, Tidyverse, Tidymodels, {Rcpp}
 * collaboration through GitHub
-* {Rcpp} proficiency for {ripserr}
 * no original theory but some original implementations
 
 ## Funding
@@ -39,6 +39,7 @@ Are there tools or tech that don't exist that will be produced to facilitate the
 -->
 
 * 3 or 4 months of time, 1.5 or 2 each for Brunson and Stamm?
+* 0.5 FTE
 
 ## Summary
 <!--

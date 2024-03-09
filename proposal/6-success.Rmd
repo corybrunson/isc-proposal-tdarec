@@ -8,6 +8,13 @@ Projects should have a definition of done that is measurable, and a thorough und
 What does success look like? 
 -->
 
+demonstrable
+
+* complete workflows with minimal dependencies using these tools
+* complete workflows in Tidyverse/Tidymodels using these tools
+
+aspirational/impressionistic
+
 * greater solidity and stability of TDA ecosystem in R
 * greater efficiency of TDA research & analysis by R users
 
@@ -17,7 +24,7 @@ How will we know when success is achieved, what markers can we use along the way
 -->
 
 * monthly download rates greater than current rate for, e.g., {TDA}
-* blog posts by users detailing their use of these packages
+* blog posts by users detailing their use of these packages (include "how to cite" & entries for journal articles as well as packages)
 * published research that cites these packages
 * contributions to code base from users; ideally, handoff of some packages to new maintainers
 
@@ -26,7 +33,11 @@ How will we know when success is achieved, what markers can we use along the way
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
-* analogous improvements to the more "hands-on" side of TDA including computational topology (random simplicial complexes, mapper(-like) constructions)
+analogous improvements to R packages for other work
+
+* exploratory TDA (mapper(-like) constructions)
+* computational & statistical topology (random simplicial complexes)
+
 
 ## Key risks
 <!-- 
