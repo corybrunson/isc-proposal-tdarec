@@ -8,36 +8,32 @@ Projects should have a definition of done that is measurable, and a thorough und
 What does success look like? 
 -->
 
-demonstrable
-
-* complete workflows with minimal dependencies using these tools
-* complete workflows in Tidyverse/Tidymodels using these tools
-
-aspirational/impressionistic
-
-* greater solidity and stability of TDA ecosystem in R
-* greater efficiency of TDA research & analysis by R users
+Our aspirations for this project are a more stable TDA ecosystem in R that supports greater efficiency of TDA research and analysis by R users.
 
 ## Measuring success
 <!-- 
 How will we know when success is achieved, what markers can we use along the way 
 -->
 
-* monthly download rates greater than current rate for, e.g., {TDA}
-* blog posts by users detailing their use of these packages (include "how to cite" & entries for journal articles as well as packages)
+Our benchmarks for project completion are twofold: (1) publication of packages on CRAN, and (2) complete workflows, possibly published in vignettes, blog posts, or software journal articles, that use these tools to perform typical analysis and modeling tasks in practical settings, including using real-world data.
+
+Going forward from completion, we will follow several indicators to judge success and prompt necessary follow-up work:
+
+* monthly download rates, which we would like to see meet or exceed those of the current most popular TDA packages like {TDA}
+* questions and problems raised on Stack Exchange (in addition to issues raised on the package repositories)
+* blog posts by users detailing their use of these packages
 * published research that cites these packages
-* contributions to code base from users; ideally, handoff of some packages to new maintainers
+* contributions to code base from users
+
+On the last point, a very strong indicator of success would be user contributions to the code base. Ideally, we would be able to hand maintenance of some packages in the collection to other members of the user community.
 
 ## Future work
 <!-- 
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
-analogous improvements to R packages for other work
-
-* exploratory TDA (mapper(-like) constructions)
-* computational & statistical topology (random simplicial complexes)
-
+Much will remain after these aims to provide a comprehensive R package ecosystem for topological data analysis.
+Advances are acutely needed in at least two areas: (1) exploratory TDA, including mapper [@Singh2007] and similar constructions like FibeRed [@Scoccola2023] that can be manipulated interactively and extended in new directions by users; and (2) computational and statistical topology, including tools to study the asymptotics of random simplicial complexes.
 
 ## Key risks
 <!-- 
