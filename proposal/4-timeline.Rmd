@@ -16,11 +16,11 @@ Both PIs will have write access to the repositories for all project packages.
 
 <!--Licenses: consistent with existing packages and Tidyverse (GPL >= 2)-->
 
-All project packages will be licensed compatibly with R and Tidyverse (MIT or GPL >= 2).
+All project packages will be licensed compatibly with R and Tidyverse/Tidymodels (MIT or GPL >= 2).
 
 [^r-licenses]: <https://www.r-project.org/Licenses/>
 
-The PIs will provide the R Consortium with monthly progress reports based on the expected dates of the deliverables below.
+The PIs will provide the R Consortium with monthly updates based on progress toward the deliverables below.
 
 ## Technical delivery
 <!--
@@ -29,18 +29,26 @@ Covering the actual delivery of the project this section should provide at least
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
 
-1. {recipes} extension for topological data transformations (<= 16wk)
-    1. R external engines or original implementations of transformations (<= 6wk)
-    2. template {recipes} extension (<= 2wk)
-    3. complete implementation of a single transformation & documentation of all necessary steps (including unit tests, documentation, and examples) (<= 2wk)
-    4. checklisted implementations of remaining transformations (<= 4wk)
-    5. vignette illustrating complete modeling workflow using topological transformations (<= 2wk)
-2. {flipr} extension for topological data types ()
-    1. ...
-3. {ripserr} upgrade (<= 8wk)
-    1. selection and reconciliation of current Ripser implementations in C++ (<= 3wk)
-    2. {Rcpp} integration into package (<= 3wk)
-    3. updated vignette illustrating new functionality (<= 2wk)
+Aim 1: {recipes} extension for topological data transformations (<= 16wk)
+
+1. Assembly of external engines or original implementations of selected transformations. (<= 6wk)
+2. Template {recipes} extension, to ensure that checks unrelated to implementations are satisfied. (<= 2wk)
+3. Complete implementation of a single transformation, with documentation of all necessary steps (including unit tests, documentation, and examples). (<= 2wk)
+4. Implementations of remaining selected transformations. (<= 4wk)
+5. Vignette illustrating complete modeling workflow using at least two topological transformations. (<= 2wk)
+
+Aim 2: {flipr} extension for topological data types (<= 10wk)
+
+1. Review and selection of a first set of metric spaces (representation + metric) into which the persistence data is to be analysed and implementation of such spaces. This will probably focus on vectorized representations, which would be assembled jointly with the {recipes} extension from Aim 1. (<= 2wk)
+2. Implementations of a variety of test statistics that focus on comparing different features between distributions, either exploiting accessibility to Frechet means and variances when the metric space allows for it or resorting to statistics based on inter-point distances. (<= 2wk)
+3. Implementations of confidence bands for functional representations of persistance data based on above implemented test. (<= 4wk)
+4. Writing up a vignette illustrating new functionalities. (<= 2 wk)
+
+Aim 3: {ripserr} upgrade (<= 8wk)
+
+1. Selection and reconciliation of current Ripser implementations in C++. (<= 3wk)
+2. Integration into package using {Rcpp}. (<= 3wk)
+3. Updated vignette illustrating new functionality. (<= 2wk)
 
 ## Other aspects
 <!--

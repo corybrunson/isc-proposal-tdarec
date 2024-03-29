@@ -18,7 +18,7 @@ Dr. Brunson (Assistant Professor, University of Florida) is a mathematician by t
 
 **Aymeric Stamm, PhD**
 (Project Co-lead):
-Dr. Stamm ...
+Dr. Stamm (Research Engineer, CNRS, France) is a mathematical engineer by training with specialisation in statistics including statistical information. As a mathematician, he has been working on geometry-informed statistical inference for complex objects (functional data, network-valued data, manifold-valued data) from a theoretical point of view and contributed several real-life applications as well. As an engineer, he has authored or contributed to many packages not all related to TDA. He is in particular the author and maintainer of the {rgudhi} package which ports the GUDHI library into R and of the {flipr} package for permutation-based inference. He has extensive expertise on efficient programming in R including optimisation of R code, use of C/C++ code through {Rcpp} and parallelisation of either R or C++ code.
 
 **Paul Rosen, PhD**
 (Advisory Board Member):
@@ -49,5 +49,5 @@ We have also solicited feedback on drafts of this proposal from members of the f
 * presenters at UFTDA2024[^uftda2024], a conference organized by the Bubenik lab and hosted at the University of Florida
 
 [^tda-discussion]: <https://people.clas.ufl.edu/nikola/topological-data-analysis-discussion-group/>
-[lsm]: <https://systemsmedicine.pulmonary.medicine.ufl.edu/>
+[^lsm]: <https://systemsmedicine.pulmonary.medicine.ufl.edu/>
 [^uftda2024]: <https://people.clas.ufl.edu/peterbubenik/uftda2024/>

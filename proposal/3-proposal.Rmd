@@ -75,10 +75,23 @@ Most selected methods would be implemented anew; the exceptons are persistence l
 **Aim 2:**
 Publish a {flipr} extension for permutation-based statistical inference on topological data.
 
+Dr. Stamm leads a coordinated package collection for permutation-based inference, with the published {flipr} package at its center. This package features
+
+  (i) implementations of classic permutation schemes that are agnostic to the type of input through the use of lists for defining samples and
+  (ii) the central `PlausibilityFunction` R6 class, which can be used seamlessly for performing an hypothesis test or a confidence region.
+
+Extensions can then be contributed to enablepermutation-based hypothesis testing and confidence regions for specific data types. An extension for network-valued data, {nevada},[^nevada] is also published. Two other extensions, not yet published, provide support for scalar- and vector-valued data. The {fdatest} package dedicated to inference for functional data is also undergoing a complete redesign to work with {flipr}.
+
+The new package would extend {flipr} to data types arising from TDA. Leveraging the {flipr} package, it will provide methods to perform two-sample testing, ANOVA and hypothesis tests in the context of regression (on the coefficients, or on the model itself, or for model comparison and selection). For vectorized representations of persistence homology, it will also provide confidence regions. Permutation-based hypothesis testing also features non-parametric combination (NPC) [@Pesarin2010], which enables the use of several test statistics in a single hypothesis test, making the combination sensitive to different aspects of the compared underlying distributions. The new package will inherit this capability, giving the possibility to use several representations of persistence data and several associated metrics for performing a single more powerful test.
+
+Base R provides the standard ‘htest’ output class for hypothesis tests, for which the Tidymodels {broom} package provides a suite of tidiers. These tools make programmatic statistical inference straightforward. A key advantage of the new package will be to extend this facility to statistical inference in TDA.
+
+<!--
 Several published packages provide statistical inference for persistence diagrams, but these are _ad hoc_ solutions for specific problems and do not provide a unified, easily extensible framework.
 Dr. Stamm is co-lead on a coordinated package collection for permutation-based inference, with the published {flipr} package at its center.
 An extension for network-valued data, {nevada}[^nevada], is also published.
 The new package would extend {flipr} to data types arising from TDA.
+-->
 
 [^nevada]: <https://cran.r-project.org/package=nevada>
 
