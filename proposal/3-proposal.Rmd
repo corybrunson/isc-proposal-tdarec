@@ -86,20 +86,7 @@ The new package would extend {flipr} to data types arising from TDA. Leveraging 
 
 Base R provides the standard ‘htest’ output class for hypothesis tests, for which the Tidymodels {broom} package provides a suite of tidiers. These tools make programmatic statistical inference straightforward. A key advantage of the new package will be to extend this facility to statistical inference in TDA.
 
-<!--
-Several published packages provide statistical inference for persistence diagrams, but these are _ad hoc_ solutions for specific problems and do not provide a unified, easily extensible framework.
-Dr. Stamm is co-lead on a coordinated package collection for permutation-based inference, with the published {flipr} package at its center.
-An extension for network-valued data, {nevada}[^nevada], is also published.
-The new package would extend {flipr} to data types arising from TDA.
--->
-
 [^nevada]: <https://cran.r-project.org/package=nevada>
-
-Base R provides the standard 'htest' output class for hypothesis tests, for which the Tidymodels {broom} package provides a suite of tidiers.
-These tools make programmatic statistical inference straightforward.
-A key advantage of the new package will be to extend this facility to statistical inference in TDA.
-
-**Aymeric, could you expand on the specific tools this package would provide?**
 
 <!--
 Redesign {TDAstats} to specialize in hypothesis tests and better integrate into tidy workflows.
