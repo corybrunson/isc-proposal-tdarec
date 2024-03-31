@@ -3,28 +3,27 @@
 This is where the proposal should be outlined. 
 -->
 
-The **goal** of this pilot is to publish or republish 1--3 packages that seamlessly integrate popular techniques from topological data analysis (TDA) into common statistical workflows in R.
-The **expected benefit** is that these extensions will be downloaded and used by researchers and analysts with no specialized background in TDA, which will expose them and their communities to the broader package collection and create sufficient awareness, interest, and demand for users to request features and contribute to the packages.
+Our **goal** is to seamlessly integrate popular techniques from topological data analysis (TDA) into common statistical workflows in R.
+The **expected benefit** is that these extensions will be more widely used by non-specialist researchers and analysts, which will create sufficient awareness and interest in the community to extend the individual packages and the collection.
 
 ## Overview
 <!--
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
 
-Tidymodels[^tidymodels] provides a complete machine learning toolkit for the most common prediction tasks.
-Analyses can be extended to handle less common needs, such as by using time-to-event models and customizing performance metrics.
-Machine learning relies heavily on the use of pre-processing steps, especially vectorization, and the last decade of work in TDA has produced several such methods based on persistent homology.
-None of these are currently available to Tidymodels users, and our **first aim** is to close that gap.
+Tidymodels[^tidymodels] provides a complete toolkit for common machine learning (ML) tasks.
+ML relies heavily on vectorizations, and the last decade of work in TDA has produced several for topological data.
+Our **first aim** is to make these available in a Tidymodels-compatible R package.
 
 [^tidymodels]: <https://www.tidymodels.org/>
 
-Outside machine learning, TDA relies heavily on permutation-based statistical inference.
-A variety of hypothesis tests have been proposed in the research literature, but they are implemented in several languages, and those in R rarely take advantage of standard conventions.
-Our **second aim** is to provide an extensible package for permutation-based hypothesis testing with topological data and integrate it into Tidymodels workflows.
+TDA relies heavily on statistical inference.
+A variety of hypothesis tests have been proposed in the research literature and have idiosyncratic implementations.
+Our **second aim** is to provide a Tidymodels-compatble package for permutation-based hypothesis testing with topological data.
 
-The primary workhorse for TDA (underpinning both above topics) is persistent homology, and the primary algorithm for persistent homology is Ripser, which efficiently computes Vietoris--Rips filtrations.[^ripser]
-The standalone wrapper {ripserr} is method- and dependency-light and additionally interfacing to the cubical Ripser of @Kaji2020, making it a preferable option for many analysis scripts and higher-level packages that don't rely on the wealth of other tools provided by {TDA} and {rgudhi}.
-However, the Ripser engine used in {ripserr} is out of date and missing key features, so our **third aim** is to upgrade it.
+The primary workhorse for TDA is Ripser, which efficiently computes Vietoris--Rips filtrations.
+<!--The standalone wrapper {ripserr} is method- and dependency-light and additionally interfaces to the cubical Ripser of @Kaji2020, making it ideal for projects that don't rely on comprehensive TDA toolkits.-->
+The engine used in the lightweight wrapper package {ripserr} is missing key features, so our **third aim** is to upgrade it.
 
 ## Detail
 <!--
@@ -38,7 +37,7 @@ Depending on project type the detail section should include:
 -->
 
 **Aim 1:**
-Publish a {recipes} extension for vectorizations and other transformations based on persistent homology that have been used to pre-process data for machine learning.
+Publish a {recipes} extension for vectorizations and other transformations based on persistent homology that have been used to pre-process data for ML.
 
 Several pre-processing extensions have been published for Tidymodels, including {embed}, {themis}, and {textrecipes}.[^recipes-extensions]
 The new package would provide `step_*()` functions for several existing topological transformations and invite users to contribute additional steps.
@@ -48,8 +47,8 @@ Dr. Brunson has experience writing such an extension, for association rules, whi
 [^recipes-extensions]: <https://www.tidyverse.org/blog/2022/05/recipes-update-05-20222/>
 
 Many transformations may eventually be implemented or imported [@Fasy2020; @Pun2022; @Ali2022].
-In the list below, following the organizational scheme of @Ali2022, we have boldfaced the transformations we intend to include in a first release. These are selected based on their relative simplicity, the time since they were first introduced, the frequency with which they are used, and the expected time cost of implementing them or porting an existing implementation.
-
+We intend to include the following transformations in a first release based on their relative simplicity, time on CRAN, frequency of use, and expected cost of implementation: persistence statistics, Betti curve, lifespan curve, persistence landscape, and persistent image.
+<!--
 * Statistical vectorizations
   * **Persistence statistics** [@Ali2022]
   * Entropy summary [@Ali2022]
@@ -67,24 +66,24 @@ In the list below, following the organizational scheme of @Ali2022, we have bold
   * Persistence surface [@Pun2022]
   * **Persistence image** [@Fasy2020]
   * Template functions [@Ali2022]
-
-Most selected methods would be implemented anew; the exceptons are persistence landscapes (implemented in {TDA} and in the forthcoming {plt}) and persistence images (which would be implemented in a standalone helper package adapted from the original Matlab implementation [^persistence-images]).
+-->
+Most would be implemented anew; the exceptons are persistence landscapes (implemented in the forthcoming {plt}) and persistence images (to be adapted from the original Matlab implementation [^persistence-images]).
 
 [^persistence-images]: <https://github.com/CSU-TDA/PersistenceImages>
 
 **Aim 2:**
 Publish a {flipr} extension for permutation-based statistical inference on topological data.
 
-Dr. Stamm leads a coordinated package collection for permutation-based inference, with the published {flipr} package at its center. This package features
+Dr. Stamm leads a coordinated package collection for permutation-based inference, with the published {flipr} package at its center. This package features (i) implementations of classic permutation schemes that are agnostic to the type of input through the use of lists for defining samples and (ii) the central `PlausibilityFunction` R6 class, which can be used seamlessly for performing an hypothesis test or a confidence region.
 
-  (i) implementations of classic permutation schemes that are agnostic to the type of input through the use of lists for defining samples and
-  (ii) the central `PlausibilityFunction` R6 class, which can be used seamlessly for performing an hypothesis test or a confidence region.
+Extensions can then be contributed to enablepermutation-based hypothesis testing and confidence regions for specific data types. An extension for network-valued data, {nevada}, is also published. Two unpublished extensions provide support for scalar- and vector-valued data. The {fdatest} package dedicated to inference for functional data is also undergoing a complete redesign to work with {flipr}.
 
-Extensions can then be contributed to enablepermutation-based hypothesis testing and confidence regions for specific data types. An extension for network-valued data, {nevada},[^nevada] is also published. Two other extensions, not yet published, provide support for scalar- and vector-valued data. The {fdatest} package dedicated to inference for functional data is also undergoing a complete redesign to work with {flipr}.
+The new package would extend {flipr} to data types arising from TDA. It will provide methods to perform two-sample testing, ANOVA and hypothesis tests in the context of regression. For vectorized representations of persistence homology, it will also provide confidence regions.
+The package will inherit non-parametric combination (NPC) [@Pesarin2010], which enables the use of several test statistics in a single hypothesis test, making the combination sensitive to different aspects of the compared underlying distributions.
 
-The new package would extend {flipr} to data types arising from TDA. Leveraging the {flipr} package, it will provide methods to perform two-sample testing, ANOVA and hypothesis tests in the context of regression (on the coefficients, or on the model itself, or for model comparison and selection). For vectorized representations of persistence homology, it will also provide confidence regions. Permutation-based hypothesis testing also features non-parametric combination (NPC) [@Pesarin2010], which enables the use of several test statistics in a single hypothesis test, making the combination sensitive to different aspects of the compared underlying distributions. The new package will inherit this capability, giving the possibility to use several representations of persistence data and several associated metrics for performing a single more powerful test.
-
+<!--
 Base R provides the standard ‘htest’ output class for hypothesis tests, for which the Tidymodels {broom} package provides a suite of tidiers. These tools make programmatic statistical inference straightforward. A key advantage of the new package will be to extend this facility to statistical inference in TDA.
+-->
 
 [^nevada]: <https://cran.r-project.org/package=nevada>
 
@@ -110,8 +109,8 @@ The following hypothesis tests may be implemented (listed in order of likely inc
 **Aim 3:**
 Refactor {ripserr} with a current implementation of Ripser and connect additional options to R.
 
-The base implementation of Ripser is written in C++, and {ripserr} provides C++/R integration via {Rcpp}.
-We therefore anticipate that this update will be a straightforward, though not trivial, exercise in C++/R integration via {Rcpp}.
+The base implementation of Ripser is written in C++, and {ripserr} provides integration via {Rcpp}.
+We therefore anticipate that this update will be a straightforward, though not trivial, exercise in C++/R integration.
 
 A novel feature that may pose an additional challenge is the recovery of representative cocycles and/or cycles. These features did not exist when {ripserr} was first developed but are essential for many practical applications.
 While an ideal interface would pass options to a single C++ function, a simpler approach is available in case this proves impractical, namely to interface to one of multiple C++ functions depending on user specifications.

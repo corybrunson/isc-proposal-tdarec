@@ -10,17 +10,13 @@ Covering the planning phase, this section should provide a relatively detailed p
 -->
 
 <!--Platform: GitHub TDAverse account & existing package repos-->
-
 Development will take place publicly on two GitHub accounts: TDAverse, co-owned by Dr. Brunson (Aims 1 and 3), and LMJL-Alea, co-owned by Dr. Stamm (Aim 2).
 Both PIs will have write access to the repositories for all project packages.
-
 <!--Licenses: consistent with existing packages and Tidyverse (GPL >= 2)-->
-
 All project packages will be licensed compatibly with R and Tidyverse/Tidymodels (MIT or GPL >= 2).
+The PIs will provide the R Consortium with monthly updates based on progress toward the deliverables below.
 
 [^r-licenses]: <https://www.r-project.org/Licenses/>
-
-The PIs will provide the R Consortium with monthly updates based on progress toward the deliverables below.
 
 ## Technical delivery
 <!--
@@ -32,10 +28,10 @@ Including target dates is really important as you need to be committed and the I
 Aim 1: {recipes} extension for topological data transformations (<= 16wk)
 
 1. Assembly of external engines or original implementations of selected transformations. (<= 6wk)
-2. Template {recipes} extension, to ensure that checks unrelated to implementations are satisfied. (<= 2wk)
+2. Template {recipes} extension, to ensure that infrastructural checks are satisfied. (<= 2wk)
 3. Complete implementation of a single transformation, with documentation of all necessary steps (including unit tests, documentation, and examples). (<= 2wk)
 4. Implementations of remaining selected transformations. (<= 4wk)
-5. Vignette illustrating complete modeling workflow using at least two topological transformations. (<= 2wk)
+5. Vignette illustrating complete modeling workflow using at least two transformations. (<= 2wk)
 
 Aim 2: {flipr} extension for topological data types (<= 10wk)
 
@@ -46,8 +42,8 @@ Aim 2: {flipr} extension for topological data types (<= 10wk)
 
 Aim 3: {ripserr} upgrade (<= 8wk)
 
-1. Selection and reconciliation of current Ripser implementations in C++. (<= 3wk)
-2. Integration into package using {Rcpp}. (<= 3wk)
+1. Selection and reconciliation of current Ripser implementations in C++. (<= 4wk)
+2. Integration into package using {Rcpp}. (<= 2wk)
 3. Updated vignette illustrating new functionality. (<= 2wk)
 
 ## Other aspects
@@ -61,8 +57,7 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] ISC meetings
 -->
 
-Each package release will be announced on multiple social media accounts, including with the `#rstats` tag on Twitter and on LinkedIn.
-Something we haven't done before is have blogs cross-posted to R-bloggers, and we will do so for each publication on CRAN.
-Once at least one aim is realized, we will begin submitting abstracts to relevant conferences (including useR!, `posit::conf()`, the Joint Statistical Meetings).
-We will also propose in-person workshops co-located with local conferences including UFTDA at the University of Florida.
+Each package release will be announced on multiple social media platforms using the `#rstats` tag and on blogs cross-posted to R-bloggers.
+We will submit abstracts for each aim to relevant conferences (including useR!, `posit::conf()`, the Joint Statistical Meetings).
+We will also propose in-person workshops co-located with local or regional conferences.
 Finally, we plan to submit at least two journal articles describing these packages: one on a handful of packages that integrate with the Tidyverse (including the {recipes} extension and the nearly complete {ggplot2} extension {ggtda}), another on the {flipr} collection including its TDA extension.

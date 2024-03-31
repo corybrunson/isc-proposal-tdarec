@@ -17,15 +17,8 @@ How will we know when success is achieved, what markers can we use along the way
 
 Our benchmarks for project completion are twofold: (1) publication of packages on CRAN, and (2) complete workflows, possibly published in vignettes, blog posts, or software journal articles, that use these tools to perform typical analysis and modeling tasks in practical settings, including using real-world data.
 
-Going forward from completion, we will follow several indicators to judge success and prompt necessary follow-up work:
-
-* monthly download rates, which we would like to see meet or exceed those of the current most popular TDA packages like {TDA}
-* questions and problems raised on Stack Exchange (in addition to issues raised on the package repositories)
-* blog posts by users detailing their use of these packages
-* published research that cites these packages
-* contributions to code base from users
-
-On the last point, a very strong indicator of success would be user contributions to the code base. Ideally, we would be able to hand maintenance of some packages in the collection to other members of the user community.
+Going forward from completion, we will follow several indicators to judge success and prompt necessary follow-up work, including monthly download rates (which we would like to see meet or exceed those of the current most popular TDA packages like {TDA}), questions and problems raised on Stack Exchange (in addition to issues raised on the package repositories), blog posts by users, citations in published research, and user contributions to code base.
+That last would be a very strong indicator of success.
 
 ## Future work
 <!-- 
@@ -33,7 +26,10 @@ How could this be extended / developed in the future by yourself and/or the comm
 -->
 
 Much will remain after these aims to provide a comprehensive R package ecosystem for topological data analysis.
-Advances are acutely needed in at least two areas: (1) exploratory TDA, including mapper [@Singh2007] and similar constructions like FibeRed [@Scoccola2023] that can be manipulated interactively and extended in new directions by users; and (2) computational and statistical topology, including tools to study the asymptotics of random simplicial complexes.
+Immediate next steps include (1) to write and publish a lightweight package of basic tools for handling persistence data, such as an efficient data structure and a collection of distance measures; (2) to revive, extend, and publish the {Mapper} package for exploratory TDA [@Singh2007], and to spin off multi-purpose low-level packages like {landmark}[^landmark] to simplify its code base; and (3) to integrate tools for working with Reeb graphs, such as the `ReebGraphPairing` Java package to compute extended homology [^rgp], into R.
+
+[^landmark]: <https://github.com/corybrunson/landmark>
+[^rgp]: <https://github.com/USFDataVisualization/ReebGraphPairing>
 
 ## Key risks
 <!-- 
@@ -45,6 +41,8 @@ What sort of things could come up that can delay or break the project?
  - [ ] Costs
 -->
 
-* software incompatibilities (e.g. Ripser & {Rcpp})
-* poor performance (Brunson, for one, has no background in high-performance programming)
-* lack of uptake by community despite promotion (would falsify our inferences about need?)
+We foresee two primary risks to this proposal:
+Before publication, the greatest risk is incompatibility between efficient implementations and the R language.
+Computational methods in TDA are highly complicated: Matlab and Python vectorizations may not translate easily to R, and more recent features of Ripser may pose new challenges to the {ripserr} upgrade.
+After publication, the greatest risk is lack of uptake by the community.
+{TDA} is arguably the most widely used package by researchers and analysts outside the TDA community, and it serves most needs at present. It may be that there is and will be less appetite than we expect for a more customizable approach outside the specialist community.
