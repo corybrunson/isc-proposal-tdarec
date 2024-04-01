@@ -57,7 +57,7 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] ISC meetings
 -->
 
-Each package release will be announced on multiple social media platforms using the `#rstats` tag and on blogs cross-posted to R-bloggers.
-We will submit abstracts for each aim to relevant conferences (including useR!, `posit::conf()`, the Joint Statistical Meetings).
+Each package release will be announced on social media platforms using the `#rstats` tag and on blogs cross-posted to R-bloggers.
+We will submit abstracts for each aim to relevant conferences (e.g., useR!, `posit::conf()`, the Joint Statistical Meetings).
 We will also propose in-person workshops co-located with local or regional conferences.
-Finally, we plan to submit at least two journal articles describing these packages: one on a handful of packages that integrate with the Tidyverse (including the {recipes} extension and the nearly complete {ggplot2} extension {ggtda}), another on the {flipr} collection including its TDA extension.
+Finally, we plan to submit at least two journal articles: one on a handful of packages that integrate with the Tidyverse (including the {recipes} extension and the nearly complete {ggplot2} extension {ggtda}), another on the {flipr} collection including its TDA extension.

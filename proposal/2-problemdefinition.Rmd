@@ -11,7 +11,7 @@ It is important to cover:
 -->
 
 R is one of the most widely used programming languages in statistics. It is used by professionals ranging from data analysts to educators to research statisticians, to implement newly developed methods and facilitate hands-on learning as well as to conduct routine analyses.
-Topological data analysis (TDA) is an emerging and heterogeneous area of statistical research that is grounded in the mathematical discipline of topology. It intersects heavily with exploratory analysis and visualization, statistical inference, and machine learning.
+Topological data analysis is an emerging and heterogeneous area of statistical research that is grounded in the mathematical discipline of topology. It intersects heavily with exploratory analysis and visualization, statistical inference, and machine learning.
 It is therefore important to the currency of mainstream statistical work and to ongoing methods development for R users to have access to comprehensive and reliable TDA tools.
 
 At present, this is not the case.
@@ -23,7 +23,7 @@ Regarding TDA software in general:
 
 Regarding solutions to the problems motivating this proposal:
 
-3. No software resource provides a convenient and comprehensive set of vectorization methods for persistence data.
+3. No software resource provides a comprehensive set of vectorization methods for persistence data.
 4. Most hypothesis-testing work is conducted using original _ad hoc_ code.
 5. Practitioners frequently use (various implementations or ports of) Ripser in longer computational pipelines that would otherwise be impractical.
 

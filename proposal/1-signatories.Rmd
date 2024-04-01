@@ -14,8 +14,8 @@ Describe each member of the team (including advisors) and the skills they bring 
 
 **Jason Cory Brunson, PhD**
 (Project Co-lead):
-Dr. Brunson (Assistant Professor, University of Florida) is a mathematician by training with a long-running interest in topological data analysis. He has authored or contributed to several TDA packages on CRAN, including {TDAstats}, {ripserr}, {simplextree}, {tdaunif}, the last of which he maintains.
-He also has two feature-complete packages in preparation, a {ggplot2} extension for topological data[^ggtda] and an R interface to the Persistence Landscapes Toolbox[^plt].
+Dr. Brunson (Assistant Professor, University of Florida) is a mathematician by training with a long-running interest in topological data analysis (TDA). He has authored or contributed to several TDA packages on CRAN, including {TDAstats}, {ripserr}, {simplextree}, {tdaunif}.
+He also has two feature-complete packages in preparation, a {ggplot2} extension {ggtda} for topological data and an R interface {plt} to the Persistence Landscapes Toolbox.
 
 **Aymeric Stamm, PhD**
 (Project Co-lead):
@@ -31,23 +31,23 @@ Dr. Rosen (Associate Professor, University of Utah) is a computer scientist who 
 
 **Bertrand Michel, PhD**
 (Advisory Board Member):
-Dr. Michel (Professeur, Ecole Centrale Nantes, France) is a mathematician who focuses on statistical methods for geometric and topological inference, topological data analysis, model selection and high dimensional statistics.
-He is a collaborator and member of the advisory board of the [GUDHI](https://gudhi.inria.fr/) Python and C++ library for topological data analysis.
+Dr. Michel (Professeur, Ecole Centrale Nantes, France) is a mathematician who focuses on statistical methods for geometric and topological inference, TDA, model selection and high dimensional statistics.
+He is a collaborator and member of the advisory board of the [GUDHI](https://gudhi.inria.fr/) Python and C++ library for TDA.
 
 ## Contributors
 <!-- 
 Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
 -->
 
-Several related packages are published on CRAN, installable from GitHub, or in development.
-Major contributors include Raoul Wadhwa (Cleveland Clinic Lerner College of Medicine, Case Western Reserve University), Matt Piekenbrock (Khoury College of Computer Sciences, Northeastern University), Yara Skaf (College of Medicine, University of Florida), and James Otto (Department of Statistical Science, Baylor University).
+Several related packages, dovolped in collaboration with Raoul Wadhwa, Matt Piekenbrock, Yara Skaf, James Otto, and others are published on CRAN, installable from GitHub, or in development.
+<!--Major contributors include Raoul Wadhwa (Cleveland Clinic Lerner College of Medicine, Case Western Reserve University), Matt Piekenbrock (Khoury College of Computer Sciences, Northeastern University), Yara Skaf (College of Medicine, University of Florida), and James Otto (Department of Statistical Science, Baylor University).-->
 
 ## Consulted
 <!-- 
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
-We have solicited feedback on drafts of this proposal from members of (1) the Topological Data Analysis Discussion Group at the University of Florida[^tda-discussion], (2) the Laboratory for Systems Medicine at the University of Florida[^lsm], and (3) presenters at UFTDA2024[^uftda2024], a conference organized by the Bubenik lab and hosted at the University of Florida.
+We have solicited feedback on drafts of this proposal from members of (1) the TDA Discussion Group at the University of Florida (UF)[^tda-discussion], (2) the Laboratory for Systems Medicine at the University of Florida[^lsm], and (3) presenters at UFTDA2024[^uftda2024], a conference organized by the Bubenik lab and hosted at UF.
 
 [^tda-discussion]: <https://people.clas.ufl.edu/nikola/topological-data-analysis-discussion-group/>
 [^lsm]: <https://systemsmedicine.pulmonary.medicine.ufl.edu/>

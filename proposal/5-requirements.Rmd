@@ -9,7 +9,7 @@ Who needs to be involved, what's the proposed structure, what will it take to ge
 -->
 
 The PIs (Drs. Brunson and Stamm) will lead development on the three aims.
-Both PIs recruit undergraduate research assistants to contribute to software projects.
+Both PIs routinely recruit undergraduate research assistants.
 <!--in ways that are accessible without advanced experience with R, for example to draft new functions of an established type and to write longform documentation.-->
 As interested students are found, this grant will support their contributions.
 
@@ -23,10 +23,11 @@ The Laboratory for Systems Medicine, which employs Dr. Brunson, is piloting an i
 What processes need to be put in place e.g. codes of conduct, regular ISC meetings, handover to the community at large?
 -->
 
-For submission of first releases, no new processes are needed:
+For first releases, no new processes are needed:
 Packages will be accessible and contributable to by way of detailed instructions based on those of other packages in the Tidyverse and the PIs' portfolios.
-Future releases will necessarily rely on user community input to identify bugs and prioritize features.
-While no plan is proposed, the PIs are prepared to hand maintenance off to interested user--contributors following expression of interest and negotiations over style and standards.
+Future releases will rely on user community input to identify bugs and prioritize features.
+While no plan is proposed, the PIs are prepared to discuss handoffs to interested user--contributors.
+<!--following expression of interest and negotiations over style and standards.-->
 
 ## Tools & Tech
 <!--
@@ -47,8 +48,9 @@ Component tools may require original implementations in R but no original theory
 
 The timeline above envisions both PIs contributing 1/6 FTE during an 8-month award period.
 At a mean salary of about $80,000/year, this amounts to roughly $18,000 total.
-Up to 80% of this total may be redirected to students through mentored projects if the PIs reasonably expect their productivity to be commensurate to their total pay based on wages appropriate to their training (and no lower than the area minimum livable wage).
-A smaller amount will support Aims 1 and 2 to the extent possible, with Aim 3 contingent on success with Aim 2.
+Up to 80% of this total may be redirected to students through mentored projects.
+<!--if the PIs reasonably expect their productivity to be commensurate to their total pay based on wages appropriate to their training (and no lower than the area minimum livable wage).-->
+A smaller award amount would support Aims 1 and 2 to the extent possible, with Aim 3 as a stretch goal.
 
 ## Summary
 <!--
@@ -56,10 +58,12 @@ A summary of the requirements that contextualises the costs
 -->
 
 Time is expected to be spread across tasks as follows:
+development and documentation (75%), publication and promotion (15%), coordination and mentorship (10%).
 
+<!--
 |Task                      | Percent|
 |:-------------------------|-------:|
 |Development               |    75% |
 |Promotion                 |    15% |
 |Coordination & mentorship |    10% |
-
+-->
