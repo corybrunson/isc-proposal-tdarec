@@ -31,7 +31,8 @@ Dr. Rosen (Associate Professor, University of Utah) is a computer scientist who 
 
 **Bertrand Michel, PhD**
 (Advisory Board Member):
-Dr. Michel (Professeur, l'Ecole Centrale Nantes) researches statistical learning and is interested in statistical methods for geometric and topological inference. He coauthored {flipr} with Dr. Stamm and others.
+Dr. Michel (Professeur, Ecole Centrale Nantes, France) is a mathematician who focuses on statistical methods for geometric and topological inference, topological data analysis, model selection and high dimensional statistics.
+He is a collaborator and member of the advisory board of the [GUDHI](https://gudhi.inria.fr/) Python and C++ library for topological data analysis.
 
 ## Contributors
 <!-- 
