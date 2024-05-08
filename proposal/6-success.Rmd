@@ -47,4 +47,4 @@ We foresee two primary risks to this proposal:
 Before publication, the greatest risk is that structures and procedures used in Matlab and C++ may not translate easily to R. Alternative solutions are to implement directly from theory (persistent images) and to include separate implementations for different tasks (Ripser).
 After publication, the greatest risk is lack of community uptake.
 It may be that there is and will be less appetite than we expect for more customizable tools outside the specialist community.
-To reduce this risk, we focus this proposal on the most common yet least aavailable tools, based on conversations with colleagues.
+To reduce this risk, we focus this proposal on the most common yet least available tools, based on conversations with colleagues.

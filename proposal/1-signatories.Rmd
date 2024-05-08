@@ -47,7 +47,7 @@ Several related packages, dovolped in collaboration with Raoul Wadhwa, Matt Piek
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
-We have solicited feedback on drafts of this proposal from members of (1) the TDA Discussion Group at the University of Florida (UF)[^tda-discussion], (2) the Laboratory for Systems Medicine at the University of Florida[^lsm], and (3) presenters at UFTDA2024[^uftda2024], a conference organized by the Bubenik lab and hosted at UF.
+We have solicited feedback on drafts of this proposal from members of (1) the TDA Discussion Group at the University of Florida (UF)[^tda-discussion], (2) the Laboratory for Systems Medicine at the University of Florida[^lsm], and (3) presenters at UFTDA[^uftda2024], a conference organized by the Bubenik lab and hosted at UF.
 
 [^tda-discussion]: <https://people.clas.ufl.edu/nikola/topological-data-analysis-discussion-group/>
 [^lsm]: <https://systemsmedicine.pulmonary.medicine.ufl.edu/>

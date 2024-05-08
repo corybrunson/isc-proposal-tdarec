@@ -8,13 +8,13 @@ An idea of what is required to make the project actually happen
 Who needs to be involved, what's the proposed structure, what will it take to get their involvement?
 -->
 
-The PIs (Drs. Brunson and Stamm) will lead development on the three aims.
-Both PIs routinely recruit undergraduate research assistants.
+The co-leads (Drs. Brunson and Stamm) will lead development on the three aims.
+Both co-leads routinely recruit undergraduate research assistants.
 <!--in ways that are accessible without advanced experience with R, for example to draft new functions of an established type and to write longform documentation.-->
 As interested students are found, this grant will support their contributions.
 
 <!--
-Both PIs work near colleagues who use TDA in their work or who develop TDA theory or software, and several have agreed to review new tools and provide practical feedback, especially as it pertains to their probability of adopting these tools into their own work or recommending them to their colleagues.
+Both co-leads work near colleagues who use TDA in their work or who develop TDA theory or software, and several have agreed to review new tools and provide practical feedback, especially as it pertains to their probability of adopting these tools into their own work or recommending them to their colleagues.
 The Laboratory for Systems Medicine, which employs Dr. Brunson, is piloting an internal peer review for lab-developed software to be stored on a shared account, and all products from this project will be submitted there.
 -->
 
@@ -24,9 +24,9 @@ What processes need to be put in place e.g. codes of conduct, regular ISC meetin
 -->
 
 For first releases, no new processes are needed:
-Packages will be accessible and contributable to by way of detailed instructions based on those of other packages in the Tidyverse and the PIs' portfolios.
+Packages will be accessible and contributable to by way of detailed instructions based on those of other packages in the Tidyverse and the co-leads' portfolios.
 Future releases will rely on user community input to identify bugs and prioritize features.
-While no plan is proposed, the PIs are prepared to discuss handoffs to interested user--contributors.
+While no plan is proposed, the co-leads are prepared to discuss handoffs to interested user--contributors.
 <!--following expression of interest and negotiations over style and standards.-->
 
 ## Tools & Tech
@@ -46,10 +46,10 @@ Component tools may require original implementations in R but no original theory
 [TO DO] THE GUIDANCE IS PRETTY UNCLEAR, ESP IN LIGHT OF GABOR'S PROPOSAL VS AWARD SIZE
 -->
 
-The timeline above envisions both PIs contributing 1/6 FTE during an 8-month award period.
+The timeline above envisions both co-leads contributing 1/6 FTE during an 8-month award period.
 At a mean salary of about $80,000/year, this amounts to roughly $18,000 total.
 Up to 80% of this total may be redirected to students through mentored projects.
-<!--if the PIs reasonably expect their productivity to be commensurate to their total pay based on wages appropriate to their training (and no lower than the area minimum livable wage).-->
+<!--if the co-leads reasonably expect their productivity to be commensurate to their total pay based on wages appropriate to their training (and no lower than the area minimum livable wage).-->
 A smaller award amount would support Aims 1 and 2 to the extent possible, with Aim 3 as a stretch goal.
 
 ## Summary

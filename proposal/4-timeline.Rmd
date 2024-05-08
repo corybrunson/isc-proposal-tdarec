@@ -11,10 +11,10 @@ Covering the planning phase, this section should provide a relatively detailed p
 
 <!--Platform: GitHub TDAverse account & existing package repos-->
 Development will take place publicly on two GitHub accounts: TDAverse, co-owned by Dr. Brunson (Aims 1 and 3), and LMJL-Alea, co-owned by Dr. Stamm (Aim 2).
-Both PIs will have write access to the repositories for all project packages.
+Both co-leads will have write access to the repositories for all project packages.
 <!--Licenses: consistent with existing packages and Tidyverse (GPL >= 2)-->
 All project packages will be licensed compatibly with R and Tidyverse/Tidymodels (MIT or GPL >= 2).
-The PIs will provide the R Consortium with monthly updates based on progress toward the deliverables below.
+The co-leads will provide the R Consortium with monthly updates based on progress toward the deliverables below.
 
 [^r-licenses]: <https://www.r-project.org/Licenses/>
 
@@ -59,5 +59,5 @@ Covering non-technical activities like on-going publicity, paper preparation, di
 
 Each package release will be announced on social media platforms using the `#rstats` tag and on blogs cross-posted to R-bloggers.
 We will submit abstracts for each aim to relevant conferences (e.g., useR!, `posit::conf()`, the Joint Statistical Meetings).
-We will also propose in-person workshops co-located with local or regional conferences.
+We will also propose in-person workshops co-located with local or regional conferences, including UFTDA.
 Finally, we plan to submit at least two journal articles: one on a handful of packages that integrate with the Tidyverse (including the {recipes} extension and the nearly complete {ggplot2} extension {ggtda}), another on the {flipr} collection including its TDA extension.
